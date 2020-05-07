@@ -9,7 +9,7 @@ goto MemberService folder
 run below command in terminal\
 mvn spring-boot:run
 
-Database query tool available in  http://localhost:8080/h2-console
+Database query tool available in  http://localhost:8181/h2-console
 
 
 ## Docker Command ##
