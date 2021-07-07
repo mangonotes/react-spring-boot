@@ -1,0 +1,13 @@
+<div class="col-md-6">
+    <table class="table table-hover">
+      <tr>
+        <th>#</th>
+        <th>Task</th>
+        <th></th>
+      </tr>
+      <tr *ngFor="let task of tasks">
+          <app-task-view [task] ="task"></app-task-view>
+      </tr>
+      </table>
+</div>
+<app-task-create (updateEvent)="updateTaskEventHandler($event)" ></app-task-create>

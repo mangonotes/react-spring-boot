@@ -1,0 +1,6 @@
+<p>task-create works!</p>
+<form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+    <input name="description" [(ngModel)] ="model.description" required #name>
+    <input name="id" [(ngModel)]="model.id" required #id>
+    <button type="submit" class="btn btn-success" [disabled]="!myForm.form.valid">Submit</button>
+</form>
